@@ -6,7 +6,7 @@ __author__ = {'name' : 'Wei Qiao',
 	      'mail' : 'qiaowei@tamu.edu'}
 
 
-class ArithmeticCoding:
+class HuffmanCoding:
 	p_dic = {}   #a dictionary to store the number of occurence of each symbol
 	summ = 0.0
 	coding_sequence = ""
@@ -55,13 +55,14 @@ class ArithmeticCoding:
 		
 
 
-	def decoder(self,coded_str):
-		x=2
+	def decoder(self):
+	        #worked using the generated codes and the probabilities
+                	
 		
 
 
 if __name__=="__main__":
-	codec = ArithmeticCoding()
+	codec = HuffmanCoding()
 	s=raw_input("Please input the symbols you want to code uisng Huffman:\n")
 	codec.coder(s)  
         for (key,val) in  codec.p_dic.items():
